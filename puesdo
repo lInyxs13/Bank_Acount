@@ -1,0 +1,26 @@
+Instructor note:
+You may either
+
+write your code in VS Code, then copy and paste into the appropriate file in zyBooks, or
+write your code directly in the zyBooks files.
+If you write your code directly in zyBooks, you should Run program (in Develop Mode) or Submit for grading (in Submit Mode) frequently so that your work is saved.
+
+Given main(), define the BankAccount class (in files BankAccount.h and BankAccount.cpp) that manages checking and savings accounts. The class has three private data members:
+
+customer name (string)
+savings account balance (double)
+checking account balance (double)
+Implement the following constructor and public member functions as listed below:
+
+BankAccount(string newName, double chBalance, double sBalance) - set the customer name to parameter newName, set the checking account balance to parameter chBalance and set the savings account balance to parameter sBalance.
+void SetName(string newName) - set the customer name to parameter newName
+string GetName() - return the customer name
+void SetChecking(double balance) - set the checking account balance to parameter balance
+double GetChecking() - return the checking account balance
+void SetSavings(double balance) - set the savings account balance to parameter balance
+double GetSavings() - return the savings account balance
+void DepositChecking(double amt) - add parameter amt to the checking account balance (only if positive)
+void DepositSavings(double amt) - add parameter amt to the savings account balance (only if positive)
+void WithdrawChecking(double amt) - subtract parameter amt from the checking account balance (only if positive)
+void WithdrawSavings(double amt) - subtract parameter amt from the savings account balance (only if positive)
+void TransferToSavings(double amt) - subtract parameter amt from the checking account balance and add to the savings account balance (only if positive)
